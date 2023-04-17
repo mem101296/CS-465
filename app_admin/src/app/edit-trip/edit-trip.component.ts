@@ -59,10 +59,10 @@ export class EditTripComponent implements OnInit {
 
     if(this.editForm.valid){
       this.tripService.addTrip(this.editForm.value)
-      .then( data => {
-        console.log(data);
-        this.router.navigate(['']);
-      });
+        .then( data => {
+          console.log(data);
+          this.router.navigate(['']);
+        });
     }
   }
 

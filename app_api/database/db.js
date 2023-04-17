@@ -60,3 +60,4 @@ mongoose.connection.on('connected', () => {
   connect();
 
   require('./models/travlr');
+  require("./models/user");
